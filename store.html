@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Store</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="store.css">
+</head>
+<body>
+    <div class="container-fluid ">
+        <div class="navigation">
+            <nav>
+                <ul>
+                    <li><a href="#">
+                        <i class="fas fa-user"></i> Login
+                    </a></li>
+                    <li><a href="#">
+                        <div id="cart-info" class="nav-info align-items-center cart-info d-flex justify-content-between mx-lg-5">
+                            <span class="cart-info__icon mr-lg-3"><i class="fas fa-shopping-cart"></i></span>
+                            <p class="mb-0 text-capitalize"><span id="item-count">0 </span> items - ₹<span class="item-total">0</span></p>
+                        </div>
+                    </a></li>
+                </ul>
+            </nav>
+        </div>
+        <div id="cart">
+            <div class="cart-item d-flex justify-content-between text-capitalize">
+                <p>Item-img</p>
+                <p>Name</p>
+                <p>Quantity</p>
+                <p>Total Price</p>
+            </div>
+            <div class="cart-item d-flex justify-content-between text-capitalize">
+            </div>
+            <h2 class="cart-total text-center">Total : ₹0</h2>
+        </div>
+        <div class="row max-height justify-content-center align-items-center">
+            <div class="col-10 mx-auto banner text-center">
+                <!-- <h1 class="text-capitalize">welcome to <strong class="banner-title ">grandma's</strong></h1> -->
+            </div>
+        </div>
+    </div>
+    <div class="container" id="store-section">
+        <h1 class="text-center">Swagat : Suresh's Thella</h1>
+        <div class="row" id="main-tile">
+            <div class="col-md-4 col-sm-12 col-xs-12 store-item cakes" data-item="cakes">
+                <div class="card ">
+                    <div class="img-container">
+                        <img src="images/storeImage/onion.jpg" class="card-img-top store-img" alt="">
+                        <span class="store-item-icon">
+                            <i class="fas fa-shopping-cart"></i>
+                        </span>
+                    </div>
+                    <div class="card-body">
+                        <div class="card-text d-flex justify-content-between text-capitalize">
+                            <h5 id="store-item-name">Onion(Pyaaz)</h5>
+                            <h5 class="store-item-value"><strong id="store-item-price" class="font-weight-bold">₹50/Kg</strong></h5>
+                        </div>
+                        <div class="mt-2">
+                            <button class="cart-btn">Add to Cart</button>
+                            <label for="quantity" class="ml-3">Quantity:</label>
+                                <select name="qunatity" id="quantity">
+                                    <option value="0.5kg">0.5kg</option>
+                                    <option value="1kg">1kg</option>
+                                    <option value="2kg">2kg</option>
+                                    <option value="5kg">5kg</option>
+                                </select>
+                        </div>
+                    </div>  
+                </div>
+            <!-- end of card-->
+            </div>
+            <div class="col-md-4 col-sm-12 col-xs-12 store-item cakes" data-item="cakes">
+                    <div class="card ">
+                        <div class="img-container">
+                            <img src="images/storeImage/potato.jpg" class="card-img-top store-img" alt="">
+                            <span class="store-item-icon">
+                                <i class="fas fa-shopping-cart"></i>
+                            </span>
+                        </div>
+                        <div class="card-body">
+                            <div class="card-text d-flex justify-content-between text-capitalize">
+                                <h5 id="store-item-name">Potato(Aloo)</h5>
+                                <h5 class="store-item-value"><strong id="store-item-price" class="font-weight-bold">₹20/Kg</strong></h5>
+                            </div>
+                            <div class="mt-2">
+                                <button class="cart-btn">Add to Cart</button>
+                                <label for="quantity" class="ml-3">Quantity:</label>
+                                <select name="qunatity" id="quantity">
+                                    <option value="0.5kg">0.5kg</option>
+                                    <option value="1kg">1kg</option>
+                                    <option value="2kg">2kg</option>
+                                    <option value="5kg">5kg</option>
+                                </select>
+                            </div>
+                        </div>  
+                    </div>
+                <!-- end of card-->
+                </div>
+                <div class="col-md-4 col-sm-12 col-xs-12 store-item cakes" data-item="cakes">
+                        <div class="card ">
+                            <div class="img-container">
+                                <img src="images/storeImage/tomato.jpg" class="card-img-top store-img" alt="">
+                                <span class="store-item-icon">
+                                    <i class="fas fa-shopping-cart"></i>
+                                </span>
+                            </div>
+                            <div class="card-body">
+                                <div class="card-text d-flex justify-content-between text-capitalize">
+                                    <h5 id="store-item-name">Tomato(Tamatar)</h5>
+                                    <h5 class="store-item-value"><strong id="store-item-price" class="font-weight-bold">₹30/Kg</strong></h5>
+                                </div>
+                                <div class="mt-2">
+                                    <button class="cart-btn">Add to Cart</button>
+                                    <label for="quantity" class="ml-3">Quantity:</label>
+                                    <select name="qunatity" id="quantity">
+                                        <option value="0.5kg">0.5kg</option>
+                                        <option value="1kg">1kg</option>
+                                        <option value="2kg">2kg</option>
+                                        <option value="5kg">5kg</option>
+                                    </select>
+                                </div>
+                            </div>  
+                        </div>
+                    <!-- end of card-->
+                </div>
+                <div class="col-md-4 col-sm-12 col-xs-12 store-item cakes" data-item="cakes">
+                        <div class="card ">
+                            <div class="img-container">
+                                <img src="images/storeImage/brinjal.jpg" alt="" class="card-img-top store-img">
+                                <span class="store-item-icon">
+                                    <i class="fas fa-shopping-cart"></i>
+                                </span>
+                            </div>
+                            <div class="card-body">
+                                <div class="card-text d-flex justify-content-between text-capitalize">
+                                    <h5 id="store-item-name">Brinjal(Baengan)</h5>
+                                    <h5 class="store-item-value"><strong id="store-item-price" class="font-weight-bold">₹40/Kg</strong></h5>
+                                </div>
+                                <div class="mt-2">
+                                    <button class="cart-btn">Add to Cart</button>
+                                    <label for="quantity" class="ml-3">Quantity:</label>
+                                    <select name="qunatity" id="quantity">
+                                        <option value="0.5kg">0.5kg</option>
+                                        <option value="1kg">1kg</option>
+                                        <option value="2kg">2kg</option>
+                                        <option value="5kg">5kg</option>
+                                    </select>
+                                </div>
+                            </div>  
+                        </div>
+                    <!-- end of card-->
+                </div>
+                <div class="col-md-4 col-sm-12 col-xs-12 store-item cakes" data-item="cakes">
+                        <div class="card ">
+                            <div class="img-container">
+                                <img src="images/storeImage/bitter gourd.jpg" alt="" class="card-img-top store-img">
+                                <span class="store-item-icon">
+                                    <i class="fas fa-shopping-cart"></i>
+                                </span>
+                            </div>
+                            <div class="card-body">
+                                <div class="card-text d-flex justify-content-between text-capitalize">
+                                    <h5 id="store-item-name">Bitter Gourd(Karela)</h5>
+                                    <h5 class="store-item-value"><strong id="store-item-price" class="font-weight-bold">₹40/Kg</strong></h5>
+                                </div>
+                                <div class="mt-2">
+                                    <button class="cart-btn">Add to Cart</button>
+                                    <label for="quantity" class="ml-3">Quantity:</label>
+                                    <select name="qunatity" id="quantity">
+                                        <option value="0.5kg">0.5kg</option>
+                                        <option value="1kg">1kg</option>
+                                        <option value="2kg">2kg</option>
+                                        <option value="5kg">5kg</option>
+                                    </select>
+                                </div>
+                            </div>  
+                        </div>
+                    <!-- end of card-->
+                </div>
+                <div class="col-md-4 col-sm-12 col-xs-12 store-item">
+                        <div class="card ">
+                            <div class="img-container">
+                                <img src="images/storeImage/cauliflower.jpg" alt="" class="card-img-top store-img">
+                                <span class="store-item-icon">
+                                    <i class="fas fa-shopping-cart"></i>
+                                </span>
+                            </div>
+                            <div class="card-body">
+                                <div class="card-text d-flex justify-content-between text-capitalize">
+                                    <h5 id="store-item-name">Cauliflower(Gobhi)</h5>
+                                    <h5 class="store-item-value"><strong id="store-item-price" class="font-weight-bold">₹30/Kg</strong></h5>
+                                </div>
+                                <div class="mt-2">
+                                    <button class="cart-btn">Add to Cart</button>
+                                    <label for="quantity" class="ml-3">Quantity:</label>
+                                    <select name="qunatity" id="quantity">
+                                        <option value="0.5kg">0.5kg</option>
+                                        <option value="1kg">1kg</option>
+                                        <option value="2kg">2kg</option>
+                                        <option value="5kg">5kg</option>
+                                    </select>
+                                </div>
+                            </div>  
+                        </div>
+                    <!-- end of card-->
+                </div>
+                <div class="col-md-4 col-sm-12 col-xs-12 store-item">
+                        <div class="card ">
+                            <div class="img-container">
+                                <img src="images/storeImage/cabbage.jpeg" alt="" class="card-img-top store-img">
+                                <span class="store-item-icon">
+                                    <i class="fas fa-shopping-cart"></i>
+                                </span>
+                            </div>
+                            <div class="card-body">
+                                <div class="card-text d-flex justify-content-between text-capitalize">
+                                    <h5 id="store-item-name">Cabbage(Patagobhi)</h5>
+                                    <h5 class="store-item-value"><strong id="store-item-price" class="font-weight-bold">₹25/Kg</strong></h5>
+                                </div>
+                                <div class="mt-2">
+                                    <button class="cart-btn">Add to Cart</button>
+                                    <label for="quantity" class="ml-3">Quantity:</label>
+                                    <select name="qunatity" id="quantity">
+                                        <option value="0.5kg">0.5kg</option>
+                                        <option value="1kg">1kg</option>
+                                        <option value="2kg">2kg</option>
+                                        <option value="5kg">5kg</option>
+                                    </select>
+                                </div>
+                            </div>  
+                        </div>
+                    <!-- end of card-->
+                </div>
+                <div class="col-md-4 col-sm-12 col-xs-12 store-item">
+                        <div class="card ">
+                            <div class="img-container">
+                                <img src="images/storeImage/peas.jpg" alt="" class="card-img-top store-img">
+                                <span class="store-item-icon">
+                                    <i class="fas fa-shopping-cart"></i>
+                                </span>
+                            </div>
+                            <div class="card-body">
+                                <div class="card-text d-flex justify-content-between text-capitalize">
+                                    <h5 id="store-item-name">Peas(Mattar)</h5>
+                                    <h5 class="store-item-value"><strong id="store-item-price" class="font-weight-bold">₹15/Kg</strong></h5>
+                                </div>
+                                <div class="mt-2">
+                                    <button class="cart-btn">Add to Cart</button>
+                                    <label for="quantity" class="ml-3">Quantity:</label>
+                                    <select name="qunatity" id="quantity">
+                                        <option value="0.5kg">0.5kg</option>
+                                        <option value="1kg">1kg</option>
+                                        <option value="2kg">2kg</option>
+                                        <option value="5kg">5kg</option>
+                                    </select>
+                                </div>
+                            </div>  
+                        </div>
+                    <!-- end of card-->
+                </div>
+        </div>
+    </div>
+    <footer>
+        <span>&copy; 2020 Sabzi Thella. All Rights Reserved</span>
+    </footer>
+    <script src="store.js"></script>
+</body>
+</html>
